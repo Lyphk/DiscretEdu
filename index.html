@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Conjuntos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trabajo Final</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <div>
+                <select id="animalSelector">
+                    <option value="caballo">Caballo</option>
+                    <option value="caracol">Caracol</option>
+                    <option value="cocodrilo">Cocodrilo</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="gato">Gato</option>
+                    <option value="loro">Loro</option>
+                    <option value="oveja">oveja</option>
+                    <option value="perro">Perro</option>
+                    <option value="pez">Pez</option>
+                    <option value="tortuga">Tortuga</option>
+                </select>
+                <button onclick="addAnimal('A')">  Agregar al Conjunto A  </button>
+                <button onclick="addAnimal('B')">  Agregar al Conjunto B  </button>
+
+            </div>
+        </section>
+
+        <section id="resultados">
+            <div class="conjuntoA" id="conjuntoA">
+                <h3>Conjunto A</h3>
+                <div class="contenedor"></div>
+            </div>
+            <div class="conjuntoB" id="conjuntoB">
+                <h3>Conjunto B</h3>
+                <div class="contenedor"></div>
+            </div>
+        </section>
+
+        <section id="operaciones">
+            <div id="operaciones">
+                <h2>Funciones</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Función</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A ∪ B</td>
+                            <td id="union"></td>
+                        </tr>
+                        <tr>
+                            <td>A ∩ B</td>
+                            <td id="interseccion"></td>
+                        </tr>
+                        <tr>
+                            <td>A - B</td>
+                            <td id="diferenciaA"></td>
+                        </tr>
+                        <tr>
+                            <td>B - A</td>
+                            <td id="diferenciaB"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

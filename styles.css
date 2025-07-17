@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    font-size: 1rem;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    text-align: start;
+
+}
+
+/* Sección del menú */
+#menu {
+    background-color: #cffff7;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0px 4px 6px rgb(233, 255, 253);
+}
+
+#menu select, #menu button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#menu button {
+    background-color: #cffff7;
+    color: #195203;
+}
+
+#menu button:hover {
+    background-color: #bbf1a6;
+}
+
+/* Visualización de los conjuntos */
+#resultados {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.conjuntoA {
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 40%;
+    background-color: #bafaef;
+    color: #056e5d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(156, 214, 253, 0.959);
+    text-align: center;
+}
+.conjuntoB {
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 40%;
+    background-color: #fcaeae;
+    color: #6d0606;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 192, 192, 0.993);
+    text-align: center;
+}
+
+.conjunto h3 {
+    color: #333;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo de las imágenes de animales */
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+/* Opciones adicionales */
+#menu-opciones {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    color: #666;
+}
+
+/* Operaciones */
+#operaciones {
+    text-align: center;
+    margin-top: 30px;
+}
+#operaciones {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#operaciones h2 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#operaciones table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 0;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#operaciones th,
+#operaciones td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#operaciones th {
+    background-color: #f2f2f2;
+    text-align: start;
+}
+
+#operaciones td {
+    text-align: left;
+}
